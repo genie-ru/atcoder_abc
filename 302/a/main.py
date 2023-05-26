@@ -1,6 +1,6 @@
-A, B = int(input().split())
-while A <= B:
-    if A % 3 == 0:
-        print(A)
-        break
-    A += 1
+A, B = map(int, input().split())
+
+if A % B != 0:
+    print(A // B + 1)
+else:
+    print(A // B)
